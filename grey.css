@@ -1,0 +1,508 @@
+* {
+    box-sizing: border-box;
+}
+
+div#content {
+    display: flex;
+    flex-direction: column;
+}
+a.underline {
+    position: relative;
+    text-decoration: none;
+}
+
+a.underline::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 5px;
+    left: 0;
+    background-color: #030999;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+a.underline:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+a{
+
+    color:#030999;
+}
+hr {
+    color: #000000;
+    display: block;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    border-width: 1.2px;
+    width: 70%;
+}
+
+.alap{
+    margin: 0;
+    padding: 0;
+    font-size: 95%;
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    color: #000000;
+    background-image: url('kepek/12.jpeg'); 
+    background-attachment: fixed;
+    background-size:auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;}
+.collection{
+    margin: 0;
+    padding: 0;
+    font-size: 95%;
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    color: #000000;
+    background-image: url('kepek/14.webp'); 
+    background-attachment: fixed;
+    background-size:auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;}
+.koktel{
+    margin: 0;
+    padding: 0;
+    font-size: 95%;
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    color: #000000;
+    background-color: white;
+    margin: 0;}
+.contact{
+        margin: 0;
+        padding: 0;
+        font-size: 95%;
+        font-family: 'Barlow', sans-serif;
+        font-family: 'Raleway', sans-serif;
+        color: #000000;
+        background-image: url('kepek/5.jpeg'); 
+        background-attachment: fixed;
+        background-size:auto;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin: 0;}
+.basket{    margin: 0;
+    padding: 0;
+    font-size: 95%;
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    color: #000000;
+    background-color: white;
+    margin: 0;}
+header {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+    text-align: center;
+}
+.galleria {
+    margin: auto;
+    width: 40vw;
+    height: 50vw;
+}
+.galleria-theme-classic{background-color: rgba(255, 255, 255, 0);}
+.galleria-theme-classic .galleria-thumb-nav-left, .galleria-theme-classic .galleria-thumb-nav-right, .galleria-theme-classic .galleria-info-link, .galleria-theme-classic .galleria-info-close, .galleria-theme-classic .galleria-image-nav-left, .galleria-theme-classic .galleria-image-nav-right {background-color: rgba(0, 101, 189, 0);}
+.logo{width: 180px;
+}
+
+.focim{text-transform: uppercase;
+    font-size: 40px;    
+    color: #212492;
+    font-weight: bold;
+    margin: 0px;}
+.cim5{font-size: 30px;}
+header h1 {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    margin: 0px;
+    padding: 0;
+    white-space: nowrap;
+    flex: 1 1 100%;
+    list-style-type: none;
+    text-decoration: none;
+    font-weight:bold;
+
+
+}
+
+nav li {
+    flex-direction: row;
+    letter-spacing: .06em;
+    padding-left: 2.6%;
+    padding-right: 2.6%;
+    padding-bottom: 10px;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+nav li a {
+    padding: 10px;
+    list-style-type: none;
+    text-decoration: none;
+
+}
+/* alap */
+.bemutat {
+    margin-top: 650px;
+    font-size: 24px;
+    vertical-align: top;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding-top: 5%;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 50px;
+    line-height: 1.41;
+    color: #333;
+    letter-spacing: .05em;
+    margin-bottom: 0;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 3s ease-out, transform 3s ease-out, background-color 3s ease-out;
+  }
+.bemutat2{background-image: url('kepek/szekhaz.jpeg');
+    background-size: cover;
+    height:800px;
+    position: relative; }
+.bemutat3{
+    font-size:24px;
+    vertical-align: top;
+    text-align: left;
+    background-color:  rgba(255, 255, 255, 0.9);
+    padding-top: 5%;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 50px;
+    line-height: 1.41;
+    color: #333;
+    letter-spacing: .05em;
+    margin-bottom: 0;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 3s ease-out, transform 3s ease-out, background-color 3s ease-out;}
+.rovid {
+    background: linear-gradient(180deg, rgba(0, 101, 189, 0.6) 0, rgba(33, 36, 146, 0.6));
+    font-size: 18px;
+    vertical-align: top;
+    text-align: left;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 50px;
+    line-height: 2;
+    color: white;
+    letter-spacing: .05em;
+    margin-bottom: 0;
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 3s ease-out, transform 3s ease-out, background-color 3s ease-out; 
+  }
+
+/* collection */
+.coll1{background-color:  rgba(255, 255, 255, 0.8);
+    margin-top: 50px;
+    margin-left: 8%;
+    margin-right: 8%;
+    color:black;
+text-align: center;}
+.szoveg{margin-right: 10%;}
+.simakep2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.simakep1{
+    max-width: 150px;
+    height: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 15%;
+    margin-left: 20%;
+}
+.cimgreysima{font-size: 29px;}
+
+.coll2{background-color:  rgba(255, 255, 255, 0.8);
+    margin-left: 8%;
+    margin-right: 8%;
+    text-align: center;}
+.izes{margin: 0;
+text-align: center;
+padding-top: 2%;
+font-size: 28px;}
+.simakep4{
+    width: 450px;
+    height: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+.szoveg2{margin-left: 15%;}
+
+.coll3{background-color:  rgba(255, 255, 255, 0.8);
+    margin-left: 8%;
+    margin-right: 8%;
+    color:black;
+text-align: center;}
+.simakep5{
+    width: 450px;
+    height: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 15%;
+    margin-left: 20%;
+}
+.coll4{background-color:  rgba(255, 255, 255, 0.8);
+        margin-left: 8%;
+        margin-right: 8%;
+    text-align: center;}
+.fogyaszt{margin: 0;}
+
+
+/* cocktails */
+.nagyitas {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); 
+}
+img.nagyitas:hover {
+    transform: scale(1.03);
+    transition: 1s;
+}
+
+div#kepek{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+div#kepek img{
+    width: 250px;
+}
+
+/* contact */
+.urlap{background-color: #ffffff;
+margin-top: 10%;
+margin-right: 40%;
+margin-left: 7%;
+margin-bottom: 10%;
+padding: 3%;}
+.kontaktcim{font-size: 27px;
+color: #030999;}
+
+.valasz {
+margin-top: 3px;
+    border: 1px solid #030999; 
+    border-radius: 5px;
+    width: 100%;
+    height: 30px;
+  }
+.nev{    border: 1px solid #030999; 
+    border-radius: 5px;
+    width: 100%;
+    height: 30px;
+    margin-top: 3px;}
+.email{border: 1px solid #030999; 
+
+    border-radius: 5px;
+    margin-top: 3px;
+    width: 100%;
+    height: 30px;}
+    .phone{border: 1px solid #030999; 
+
+        border-radius: 5px;
+        margin-top: 3px;
+        width: 100%;
+        height: 30px;}
+.valaszt{ border: 1px solid #030999; 
+    margin-top: 3px;
+    border-radius: 5px;
+    width: 100%;
+    height: 120px;
+    padding: 1%;}
+    .kuld3{
+        background-color: #212492; 
+        color: white; 
+        padding: 10px 20px;
+        text-align: center; 
+        margin-top: 2%;
+        width: 20%;
+        text-decoration: none;
+        display: inline-block;
+
+        border-radius: 5px;
+        border: none; 
+        cursor: pointer;
+      }
+      .kuld2{
+        background-color: #212492; 
+        color: white; 
+        padding: 10px 20px;
+        text-align: center; 
+        margin-top: 2%;
+        width: 20%;
+        text-decoration: none;
+        display: inline-block;
+margin-right: 10px;
+        border-radius: 5px;
+        border: none; 
+        cursor: pointer;
+      }
+.elfogad{margin-top: 2%;
+margin-bottom: 2%;}
+
+  
+  /* Basket */
+div#kosarkep{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+div#kosarkep img{
+    height: 400px;
+}
+#kosarkep{margin-left: 20%;
+margin-right: 20%;}
+.kos{margin: 2%;}
+.kosar2{ background-color:#ffffff; 
+    color:black;
+    font-size: 15px; 
+    padding: 10px 20px;
+    text-align: center; 
+    margin-top: 2%;
+    width: 100px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    border: none; 
+    cursor: pointer;}
+.veglegesites{font-size: 28px;
+color:white;
+margin-left: 10%;
+background-color: #0065bd;
+width: 80%;
+border-radius: 20px;
+padding-left: 10%;
+padding-right: 10%;
+padding-top: 5%;
+padding-bottom: 5%;
+margin-bottom: 50px;
+margin-top: 5%;}
+.valasz1{width: 30%;}
+.vegleges2{font-size: 20px;
+    line-height: 1.5;}
+.vegosszeg{font-size: 28px;}
+.kuld1 {
+    font-size: 17px;
+    background-color: white; 
+    color: black; 
+    padding: 10px 20px;
+    text-align: center; 
+    margin-top: 2%;
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+
+    border-radius: 5px;
+    border: none; 
+    cursor: pointer;
+  }
+  
+figure{
+    margin-top: 80px;
+  }
+
+footer {
+    clear: both;
+    text-align: center;
+    color: #ffffff;
+    background-color: #0065bd;
+    padding: 2%;
+    width: 100%;
+}
+
+
+
+
+
+/* reszopzív */
+
+img {
+    max-width: 100% !important;
+    height: auto;
+}
+
+@media only screen and (min-width: 600px) {
+    div#kepek{
+        flex-direction: row;
+        flex-wrap: wrap;}
+    div#content {
+        flex-direction: row;
+    }
+    div#felezett_content {
+        flex-direction: row;
+    }
+
+        div#kosarkep{
+            flex-direction: row;
+            flex-wrap: wrap;}
+
+    aside{
+        border-top: 0;
+        margin: 0;
+    }
+    header h1 {
+        font-size: 2em;
+    }
+    article{
+        padding:15px;
+    }
+    
+}
+
+
+@media only screen and (min-width: 868px) {
+
+
+
+    article {
+        flex-basis: 74.5%;
+    }
+
+    aside {
+        flex-basis: 25%;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    article h1 {font-size: 2em}
+    article h2 {font-size: 1.8em}
+    article h3 {font-size: 1.3em}
+    header h1 {font-size: 2.2em;}
+
+    .fele{
+        flex-basis: 38%;
+        padding: 15px;
+    }
+
+}

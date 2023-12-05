@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<html lang="hu">
+<head>
+
+  <link rel="STYLESHEET" href="grey.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="author" content="Török Donát">
+  <meta name="description" content=" Grey Goose vodka saját weboldal">
+  <title>Grey Goose</title>    
+  <link rel="icon" href="kepek/logo2.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Raleway:wght@300&family=Roboto+Condensed:ital,wght@1,300;1,700&display=swap" rel="stylesheet">
+  <script src="jquery-3.7.1.js"></script>
+  <script src="grey.js"></script>
+  <script src="jquery-validation-1.19.5/dist/jquery.validate.min.js"></script>
+<script>$(document).ready(function(){
+  $("#myform1").validate({
+    rules: {
+      valasztas: {
+        required: true,
+      },
+      vneve: "required",
+      kneve: "required",
+      szallitas: {
+        required: true,
+      },
+      email: {
+        required: true,
+        email: true
+      },
+      phone: {
+        required: true,
+        phone: true
+      },
+      jelszo: {
+required: true,
+minlength: 8
+},
+jelszoujra: {
+required: true,
+minlength: 8
+},
+    },
+    messages: {
+      valasztas: {
+        required: "Choose one!",
+      },
+      vneve: "Write your surname",
+      kneve: "Write your first name",
+      email: " Give us a valid email adress!",
+      phone: " Give us a valid Phone number!",
+      jelszo: '"The password is at least eight characters long!"',
+      jelszoujra: '"The password is at least eight characters long!"',
+      szallitas: "Choose a date!"
+    }
+  });
+});</script>
+<style>
+  label.error {
+  color: #FB3A3A;}
+  </style>
+
+  
+</head>
+
+<body class="basket">
+  <script src="grey.js"></script>
+
+    <header>
+
+      <h1><a href="#"> <img class="logo" src="kepek/logo1.png" alt="logo"></a></h1>
+
+      <nav>
+
+        <ul>
+
+          <li><a href="collection.html" class="underline">OUR COLLECTION</a></li>
+          <li><a href="cocktails.html" class="underline">OUR COCKTAILS</a></li>
+          <li><a href="alap.html" class="underline">HOMEPAGE</a></li>
+          <li><a href="#" class="underline">BASKET</a></li>
+          <li><a href="contact.html" class="underline">CONTACT US</a></li>
+        </ul>
+
+      </nav>
+
+    </header>
+    <div id="kosarkep">
+        <figure>
+            <img src="kepek/strawberry.png" alt="Strawberry" class="kos">
+            <figcaption><br>Strawberry<br>42€/piece<br><label>quantity (max.5): <input type="number" name="sdb" id="sdb" min="0" max="5" value="0"></label><br><br><hr></figcaption>
+        </figure>
+        <figure>
+            <img src="kepek/barackos.png" alt="Peach" class="kos">
+            <figcaption><br>Peach<br>43€/piece<br><label>quantity (max.5): <input type="number" name="bdb" id="bdb" min="0" max="5" value="0"></label><br><br><hr></figcaption>
+        </figure>
+        <figure>
+            <img src="kepek/dinnyes.png" alt="Watermelon" class="kos">
+            <figcaption><br>Watermelon<br>42€/piece<br><label>quantity (max.5): <input type="number" name="ddb" id="ddb" min="0" max="5" value="0"></label><br><br><hr></figcaption>
+        </figure>
+        <figure>
+            <img src="kepek/la.png" alt="La Poire" class="kos">
+            <figcaption><br>La Poire<br>50€/piece<br><label>quantity (max.5): <input type="number" name="ldb" id="ldb" min="0" max="5" value="0"></label><br><br><hr></figcaption>
+        </figure>
+        <figure>
+            <img src="kepek/sima.png" alt="Original" class="kos">
+            <figcaption><br>Original<br>43€/piece<br><label>quantity (max.5): <input type="number" name="sidb" id="sidb" min="0" max="5" value="0"></label><br><br><hr></figcaption>
+        </figure>
+        <figure>
+            <img src="kepek/citrom.png" alt="Lemon" class="kos">
+            <figcaption><br>Lemon<br>48€/piece<br><label>quantity (max.5): <input type="number" name="cdb" id="cdb" min="0" max="5" value="0"></label><br><br><hr></figcaption>
+        </figure>
+        <figure>
+            <img src="kepek/narancs.png" alt="Orange" class="kos">
+            <figcaption><br>Orange<br>47€/piece<br><label>quantity (max.5): <input type="number" name="ndb" id="ndb" min="0" max="5" value="0"></label><br><br><hr></figcaption>
+        </figure>
+      </div>
+      <div class="veglegesites">Place your Order
+        <form action= action="http://szamtud.uni-corvinus.hu/receive.php" method="post" id="myform1" novalidate>
+        <div class="vegleges2"> <article>
+          <label><br>Surname: <br><input type="text" id="vneve" name="vneve" placeholder="Surname:" class="nev"></label><br>
+          <label><br>First name: <br><input type="text" id="kneve" name="kneve" placeholder="First name:" class="nev"></label><br>
+          <label><br>E-mail:<br> <input type="email" id="email" name="email" placeholder="E-mail adress:" class="email"></label><br>
+          <label><br>Phone: <br><input type="tel" id="phone" name="phone" pattern="[0-9]{2}[0-9]{2}[0-9]{3}[0-9]{4}" placeholder="06101234567" class="phone"></label><br>
+          <label><br>Password:<br> <input type="password" id="jelszo" name="jelszo" placeholder="Password:" class="nev"></label><br>
+          <label><br>Password again:<br> <input type="password" id="jelszoujra" name="jelszoujra" placeholder="Password:" class="nev"></label><br>
+         <label><br>Which continent are you from?<br><select id="valasztas" name="valasztas" class="nev" onchange="calcTotal()">
+          <option disabled selected><br>Choose one</option>
+          <option value="30">Asia 30€</option>
+          <option value="20">Africa 20€</option>
+          <option value="40">Antarctica 40€</option>
+          <option value="10">Europe 10€</option>
+          <option value="30">North America 30€</option>
+          <option value="30">South America 30€</option>
+      </select></label><br><br>
+      When do you request the delivery of the products?<br> <input type="date" name="szallitas" id="szallitas" class="nev"></label><br><br>
+    <div class="vegosszeg" id="vegosszeg">Total: 0 €</div>
+    </div>
+  </article>
+
+      <input type="submit" name="elkuld" value="Confirm" class="kuld1">
+        
+      </div>
+
+        
+
+
+  
+
+  <footer><p class="fogyaszt">SIP RESPONSIBLY</p>KIZÁRÓLAG OKTATÁSI CÉLOKRA SZOLGÁL<br>©2023. GREY GOOSE, GREY GOOSE ESSENCES, THEIR TRADE DRESSES, AND THE GEESE DEVICE ARE TRADEMARKS.
+  </footer>
+
+</body>
+
+</html>
